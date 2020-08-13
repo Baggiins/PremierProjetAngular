@@ -1,6 +1,6 @@
-# MonProjetAngular
+# Premier projet test avec angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+Voici mon tout premier projet réaliser en angular (9) :)
 
 ## Development server
 
