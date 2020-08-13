@@ -1,0 +1,38 @@
+<div>
+    <label>intitulé:(min : 4 carac)</label>
+
+  <label>
+    <input [(ngModel)]='intit'>
+  </label>
+
+  <label>Puissance (entier de -3 à 3):</label>
+
+  <label>
+    <input [(ngModel)]="pt"/>
+  </label>
+  <div>
+            <button class="btn btn-success" (click)="onSubCamp()">Point pour campagne</button>
+            <button class="btn btn-success" (click)="onSubToul()">Point pour toulouse</button>
+           </div>
+           <div>
+            <button class="btn btn-success" (click)="submit()">Finir</button>
+           </div>
+           <hr>
+           <label>Recapitulatif des points attribués à Toulouse :</label>
+           <hr>
+           <ul>
+               <li *ngFor = "let number of listIntitToul">
+                    {{ number }}
+               </li>
+           </ul>
+           <hr>
+           <label>Recapitulatif des points attribués à la campagne :</label>
+           <hr>
+           <ul>
+               <li *ngFor = "let number of listIntitCamp">
+                    {{ number }}
+               </li>
+           </ul>
+</div>
+
+
