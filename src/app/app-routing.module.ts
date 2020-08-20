@@ -7,9 +7,11 @@ import { SingleAppareilComponent } from './single-appareil/single-appareil.compo
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { AuthGuard } from './services/auth.guard';
 import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
+import {UserListComponent} from './user-list/user-list.component';
 
 
 const appRoutes: Routes = [
+  { path: 'user', component: UserListComponent},
   { path: 'appareils', canActivate: [AuthGuard], component: AppareilViewComponent },
   { path: 'appareils/:id', canActivate: [AuthGuard], component: SingleAppareilComponent },
   { path: 'edit', canActivate: [AuthGuard], component: EditAppareilComponent},

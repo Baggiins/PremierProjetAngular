@@ -16,6 +16,8 @@ import { SingleAppareilComponent } from './single-appareil/single-appareil.compo
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { AuthGuard } from './services/auth.guard';
 import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
+import { UserListComponent } from './user-list/user-list.component';
+import {UserService} from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
     AppareilViewComponent,
     SingleAppareilComponent,
     FourOhFourComponent,
-    EditAppareilComponent
+    EditAppareilComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
     AppRoutingModule
   ],
   providers: [
+    UserService,
     AppareilService,
     AuthService,
     AuthGuard
