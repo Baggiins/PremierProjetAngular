@@ -2,6 +2,11 @@
 
 Voici mon tout premier projet réaliser en angular (9) :)
 
+## Présentation
+
+Il sagit juste de la réalisation du tuto openClassroom pour m'initier à Angular
+
+# Fonctionnement (auto gen)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
