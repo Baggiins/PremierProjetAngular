@@ -6,19 +6,16 @@ export class UserService {
     {
       firstName: 'James',
       lastName: 'patison',
-      email: 'mes@couilles.com',
-      drinkPreference: 'coca',
+      email: 'jrm@duarte.com',
+      drinkPreference: 'pepsi',
       hobbies: [
         'code',
-        'cafe'
-      ]
-    }
-  ];
+        'cafe',
+        'jeux vidéos'
+      ]}];
   userSubject = new Subject<User[]>();
 
-  emitUser(){
-    this.userSubject.next(this.users.slice());
-  }
+  emitUser() {this.userSubject.next(this.users.slice()); }
 
   addUser(user: User) {
     this.users.push(user);
