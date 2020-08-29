@@ -4,7 +4,7 @@
     <p>{{ user.email }}</p>
     <p> Cette personne préfère le {{ user.drinkPreference }}</p>
     <p *ngIf="user.hobbies && user.hobbies.length > 0">
-      Cette personne a des hobbies !
+      Nice, cette personne a des hobbies !
     <span *ngFor="let hobbie of user.hobbies">{{ hobbie }} - </span></p>
   </li>
 </ul>
